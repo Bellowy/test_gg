@@ -1,0 +1,9 @@
+html:not(.android-device) {
+    * {
+        text-rendering: geometricPrecision;
+    }
+}
+
+header {
+    overflow-x: hidden;
+}
