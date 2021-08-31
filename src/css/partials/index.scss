@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+#main {
+  height: 100vh;
+}
+
+.container {
+
+  .content {
+    width: 1150px;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    position: relative;
+
+    @media (max-width: $container_width) {
+      width: 900px;
+    }
+
+    @media (max-width: $tablet_width) {
+      width: 100%;
+      padding: 50px 10px;
+    }
+  }
+}
