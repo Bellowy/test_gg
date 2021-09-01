@@ -228,28 +228,47 @@
                 }
             }
 
-            .checkbox {
-                font-family: $OpenSans_Regular;
-                font-size: 14px;
-                line-height: 1.71;
-                color: $fff;
+            .checkbox__wrapper {
                 margin-top: 24px;
-                padding-left: 23px;
                 position: relative;
-                cursor: pointer;
 
-                @media (max-width: $big-notebook_width) {
-                    display: none;
+                .checkbox {
+                    font-family: $OpenSans_Regular;
+                    font-size: 14px;
+                    line-height: 1.71;
+                    color: $fff;
+                    padding-left: 23px;
+                    position: relative;
+                    cursor: pointer;
+    
+                    @media (max-width: $big-notebook_width) {
+                        display: none;
+                    }
+    
+                    &::before {
+                        content: '';
+                        background-image: url(/images/Cheked.svg);
+                        position: absolute;
+                        width: 15px;
+                        height: 15px;
+                        top: 3px;
+                        left: 0;
+                    }
                 }
-
-                &::before {
-                    content: '';
+    
+                input {
+                    content: "";
                     position: absolute;
-                    background-image: url(/images/Cheked.svg);
+                    top: 4px;
+                    left: -4px;
                     width: 15px;
                     height: 15px;
-                    top: 5px;
-                    left: 0;
+                    z-index: 10;
+                    opacity: 0;
+                }
+
+                input[type="checkbox"]:checked + .checkbox::before {
+                    background-image: url(/images/Uncheked.svg);
                 }
             }
         }
