@@ -6,6 +6,10 @@
         border-radius: 4px;
         margin-bottom: 24px;
 
+        @media (max-width: $mobile_width) {
+            margin-bottom: 2px;
+        }
+
         &__title {
             margin-bottom: 10px;
             padding: 24px 24px 0px 24px;
@@ -141,6 +145,111 @@
                         border-radius: 2px 0 0 2px;
                         background-color: $color_3a9749;
                     }
+                }
+            }
+        }
+    }
+
+    &--avatar {
+        background-color: $color_171d30;
+        border-radius: 4px;
+        margin-bottom: 24px;
+
+        @media (max-width: $mobile_width) {
+            margin-bottom: 2px;
+        }
+
+        &__title {
+            margin-bottom: 10px;
+            padding: 25px 24px 8px 24px;
+
+            @media (max-width: $mobile_width) {
+                margin-bottom: 7px;
+                padding: 14px 14px 0px 14px;
+            }
+        }
+
+        &__wrapper {
+            padding: 0px 20px 24px 20px;
+
+            @media (max-width: $mobile_width) {
+                padding: 14px 14px 0px 14px;
+            }
+
+            .wrapper__avatar-button {
+                display: flex;
+                
+
+                .avatar {
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 2px;
+                    position: relative;
+    
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        background-image: url(/images/1.png);
+                        width: 64px;
+                        height: 64px;
+                        right: -14px;
+                        bottom: -14px;
+
+                        @media (max-width: $big-notebook_width) {
+                            display: none;
+                        }
+                    }
+                }
+                .button__wrapper {
+                    margin-left: 24px;
+
+                    .button {
+                        position: relative;
+
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            background-image: url(/images/Trash.svg);
+                            width: 24px;
+                            height: 24px;
+                            cursor: pointer;
+                            top: 5px;
+                            right: -40px;
+                        }
+                    }
+
+                    .text {
+                        font-family: $OpenSans_Regular;
+                        font-size: 14px;
+                        line-height: 1.71;
+                        color: $fff;
+                        margin-top: 16px;
+                    }
+                }
+            }
+
+            .checkbox {
+                font-family: $OpenSans_Regular;
+                font-size: 14px;
+                line-height: 1.71;
+                color: $fff;
+                margin-top: 24px;
+                padding-left: 23px;
+                position: relative;
+                cursor: pointer;
+
+                @media (max-width: $big-notebook_width) {
+                    display: none;
+                }
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    background-image: url(/images/Cheked.svg);
+                    width: 15px;
+                    height: 15px;
+                    top: 5px;
+                    left: 0;
                 }
             }
         }
