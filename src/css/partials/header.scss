@@ -114,6 +114,10 @@
           display: flex;
           padding: 12px 13px 16px 0px;
         }
+
+        @media (max-width: $mobile_width) {
+          padding: 12px 10px 16px 0px;
+        }
       }
     }
 }
