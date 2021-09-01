@@ -1,0 +1,148 @@
+.tab__content {
+    margin: 24px 0 0;
+
+    &--main {
+        background-color: $color_171d30;
+        border-radius: 4px;
+        margin-bottom: 24px;
+
+        &__title {
+            margin-bottom: 10px;
+            padding: 24px 24px 0px 24px;
+
+            @media (max-width: $mobile_width) {
+                margin-bottom: 7px;
+                padding: 14px 14px 0px 14px;
+            }
+        }
+
+        &__text {
+            font-family: $OpenSans_Regular;
+            font-size: 14px;
+            line-height: 24px;
+            color: $fff;
+            padding: 0 24px;
+
+            @media (max-width: $mobile_width) {
+                padding: 0px 14px;
+            }
+        }
+
+        &__form {
+            margin-top: 24px;
+            padding: 0 24px;
+
+            @media (max-width: $mobile_width) {
+                margin-top: 14px;
+                padding: 0px 14px;
+            }
+
+            .form__wrapper {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 24px;
+
+                @media (max-width: $mobile_width) {
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+
+                .eye__input {
+                    position: relative;
+
+                    @media (max-width: $mobile_width) {
+                        flex: 0 0 100%;
+                        width: 100%;
+                    }
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        background-image: url(/images/Eye.svg);
+                        width: 24px;
+                        height: 24px;
+                        right: 16px;
+                        top: 5px;
+                    }
+                }
+
+                .arrow__input {
+                    position: relative;
+
+                    @media (max-width: $mobile_width) {
+                        flex: 0 0 100%;
+                        width: 100%;
+                    }
+
+                    &::before {
+                        display: none;
+
+                        @media (max-width: $big-notebook_width) {
+                            content: '';
+                            position: absolute;
+                            background-image: url(/images/Arrow_Dropdown.svg);
+                            width: 8px;
+                            height: 5px;
+                            right: 14px;
+                            top: 16px;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__button {
+            padding: 24px;
+            background-color: #22293f;
+            border-radius: 4px;
+
+            @media (max-width: $mobile_width) {
+                background-color: transparent;
+                padding: 0px 14px 14px 14px;
+            }
+
+            .button__wrapper {
+                display: flex;
+                justify-content: space-between;
+
+                .button__submit {
+                    @media (max-width: $big-notebook_width) {
+                        background-color: $color_656871;
+                    }
+
+                    @media (max-width: $mobile_width) {
+                        flex: 0 0 100%;
+                        width: 100%;
+                    }
+                }
+
+                .button__done {
+                    position: relative;
+                    font-family: $OpenSans_Regular;
+                    font-size: 14px;
+                    line-height: 1.71;
+                    padding: 5px 12px;
+                    color: $fff;
+                    border-radius: 2px;
+                    background-color: $color_greenRGBA;
+
+                    @media (max-width: $big-notebook_width) {
+                        display: none;
+                    }
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 4px;
+                        height: 100%;
+                        border-radius: 2px 0 0 2px;
+                        background-color: $color_3a9749;
+                    }
+                }
+            }
+        }
+    }
+}
