@@ -69,6 +69,7 @@
                         height: 24px;
                         right: 16px;
                         top: 5px;
+                        cursor: pointer;
                     }
                 }
 
@@ -248,7 +249,6 @@
                     color: $fff;
                     padding-left: 23px;
                     position: relative;
-                    cursor: pointer;
     
                     @media (max-width: $big-notebook_width) {
                         display: none;
@@ -274,6 +274,7 @@
                     height: 15px;
                     z-index: 10;
                     opacity: 0;
+                    cursor: pointer;
                 }
 
                 input[type="checkbox"]:checked + .checkbox::before {
@@ -463,6 +464,7 @@
                         height: 18px;
                         left: 120px;
                         top: 7px;
+                        cursor: pointer;
 
                         @media (max-width: $mobile_width) {
                             left: 87%;
@@ -524,6 +526,14 @@
                     .rb3__label {
                         @media(max-width: $mobile_width) {
                             display: none;
+                        }
+                    }
+
+                    .rb4 {
+                        display: none;
+
+                        @media(max-width: $mobile_width) {
+                            display: inline;
                         }
                     }
 
