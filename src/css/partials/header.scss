@@ -7,7 +7,7 @@
       display: flex;
   
       .logo {
-        padding: 15px 16px 14px 15px;
+        padding: 15px 16px 11px 15px;
       }
   
       .top__nav {
@@ -21,7 +21,8 @@
             font-size: 18px;
             line-height: 1.38;
             color: $fff;
-            font-family: $OpenSans_Regular;
+            font-family: $OpenSans;
+            font-weight: 400;
           }
   
           &:last-child {
@@ -44,7 +45,7 @@
       }
   
       .search {
-        padding: 19px 0 15px 0;
+        padding-top: 19px;
         cursor: pointer;
   
         @media(max-width: $mobile_width) {
@@ -58,14 +59,15 @@
       cursor: pointer;
   
       .profile__img {
-        padding: 10px 0px 10px 0px;
+        padding: 10px 0px 5px 0px;
       }
   
       .account__name {
         color: $color_73adff;
         font-size: 18px;
         line-height: 1.38;
-        font-family: $OpenSans_Regular;
+        font-family: $OpenSans;
+        font-weight: 400;
         padding: 12px 0px 11px 12px;
         margin-right: 34px;
         position: relative;
@@ -94,7 +96,7 @@
   
         @media(max-width: $mobile_width) {
           display: flex;
-          padding: 15px 28px 15px 26px;
+          padding: 12px 28px 15px 26px;
         }
       }
   
@@ -103,7 +105,7 @@
   
         @media (max-width: $laptop_width) {
           display: flex;
-          padding: 16px 28px 16px 0px;
+          padding: 12px 28px 16px 0px;
         }
       }
   
@@ -112,7 +114,11 @@
   
         @media (max-width: $laptop_width) {
           display: flex;
-          padding: 17px 13px 16px 0px;
+          padding: 12px 13px 16px 0px;
+        }
+
+        @media (max-width: $mobile_width) {
+          padding: 12px 10px 16px 0px;
         }
       }
     }
