@@ -8,13 +8,14 @@ header {
     overflow-x: hidden;
 }
 
-a {
+.link {
     color: $color_73adff;
     text-decoration: none;
 }
 
-h3 {
-    font-family: $OpenSans_SemiBold;
+.h3 {
+    font-family: $OpenSans;
+    font-weight: 600;
     font-size: 22px;
     line-height: 1.45;
     color: $fff;
@@ -25,8 +26,9 @@ h3 {
     }
 }
 
-label {
-    font-family: $OpenSans_SemiBold;
+.label {
+    font-family: $OpenSans;
+    font-weight: 400;
     font-size: 14px;
     line-height: 1.7;
     color: $fff;
@@ -36,7 +38,7 @@ label {
     }
 }
 
-input {
+.input {
     color: $fff;
     font-size: 14px;
     line-height: 1.35;
@@ -62,12 +64,13 @@ input {
     }
 }
 
-button {
+.button {
     background-color: $color_3a6097;
     border: none;
     border-radius: 2px;
     padding: 5px 16px;
-    font-family: $OpenSans_Regular;
+    font-family: $OpenSans;
+    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     color: $fff;

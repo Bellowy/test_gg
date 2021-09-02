@@ -21,7 +21,8 @@
             font-size: 18px;
             line-height: 1.38;
             color: $fff;
-            font-family: $OpenSans_Regular;
+            font-family: $OpenSans;
+            font-weight: 400;
           }
   
           &:last-child {
@@ -65,7 +66,8 @@
         color: $color_73adff;
         font-size: 18px;
         line-height: 1.38;
-        font-family: $OpenSans_Regular;
+        font-family: $OpenSans;
+        font-weight: 400;
         padding: 12px 0px 11px 12px;
         margin-right: 34px;
         position: relative;

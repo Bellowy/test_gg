@@ -21,7 +21,8 @@
         }
 
         &__text {
-            font-family: $OpenSans_Regular;
+            font-family: $OpenSans;
+            font-weight: 400;
             font-size: 14px;
             line-height: 24px;
             color: $fff;
@@ -125,7 +126,8 @@
 
                 .button__done {
                     position: relative;
-                    font-family: $OpenSans_Regular;
+                    font-family: $OpenSans;
+                    font-weight: 400;
                     font-size: 14px;
                     line-height: 1.71;
                     padding: 5px 12px;
@@ -183,6 +185,10 @@
                 
                 .avatar {
                     position: relative;
+
+                    @media (max-width: $mobile_width) {
+                        margin-bottom: 10px;
+                    }
     
                     &::before {
                         content: '';
@@ -225,7 +231,8 @@
                     }
 
                     .text {
-                        font-family: $OpenSans_Regular;
+                        font-family: $OpenSans;
+                        font-weight: 400;
                         font-size: 14px;
                         line-height: 1.71;
                         color: $fff;
@@ -243,7 +250,8 @@
                 }
 
                 .checkbox {
-                    font-family: $OpenSans_Regular;
+                    font-family: $OpenSans;
+                    font-weight: 400;
                     font-size: 14px;
                     line-height: 1.71;
                     color: $fff;
@@ -303,7 +311,8 @@
 
         &__text {
             padding: 0px 24px 24px 24px;
-            font-family: $OpenSans_Regular;
+            font-family: $OpenSans;
+            font-weight: 400;
             font-size: 14px;
             line-height: 1.71;
             color: $fff;
@@ -345,8 +354,7 @@
                     margin-left: 24px;
 
                     @media (max-width: $mobile_width) {
-                        margin-left: 0px;
-                        margin-top: 10px;
+                        margin: 10px 0px 14px 0px;
                     }
 
                     .button {
@@ -365,7 +373,8 @@
                     }
 
                     .text {
-                        font-family: $OpenSans_Regular;
+                        font-family: $OpenSans;
+                        font-weight: 400;
                         font-size: 14px;
                         line-height: 1.71;
                         color: $fff;
@@ -400,7 +409,8 @@
         }
 
         &__text {
-            font-family: $OpenSans_Regular;
+            font-family: $OpenSans;
+            font-weight: 400;
             font-size: 14px;
             line-height: 24px;
             color: $fff;
@@ -475,7 +485,8 @@
 
             .form__wrapper--radio {
                 .label {
-                    font-family: $OpenSans_SemiBold;
+                    font-family: $OpenSans;
+                    font-weight: 600;
                     font-size: 14px;
                     line-height: 1.7;
                     color: $fff;
@@ -523,25 +534,25 @@
                         }
                     }
 
-                    .rb3__label {
+                    .rb3__label span {
                         @media(max-width: $mobile_width) {
                             display: none;
                         }
                     }
 
-                    .rb4 {
-                        display: none;
+                    .rb3__label {
+                        &::after {
+                            display: none;
 
-                        @media(max-width: $mobile_width) {
-                            display: inline;
-                        }
-                    }
-
-                    .mobile {
-                        display: none;
-
-                        @media(max-width: $mobile_width) {
-                            display: inline;
+                            @media(max-width: $mobile_width) {
+                                display: inline;
+                                content:'Не указ.'; 
+                                font-family: $OpenSans;
+                                font-weight: 600;
+                                font-size: 14px;
+                                line-height: 1.7;
+                                color: $fff;
+                            }
                         }
                     }
 
@@ -595,7 +606,8 @@
         }
 
         &__text {
-            font-family: $OpenSans_Regular;
+            font-family: $OpenSans;
+            font-weight: 400;
             font-size: 14px;
             line-height: 24px;
             color: $fff;
@@ -613,7 +625,8 @@
             width: 685px;
             min-height: 122px;
             max-height: calc(100vh - 375px);
-            font-family: $OpenSans_Regular;
+            font-family: $OpenSans;
+            font-weight: 400;
             font-size: 16px;
             line-height: 1.75;
             color: $fff;

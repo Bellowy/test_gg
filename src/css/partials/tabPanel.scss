@@ -2,7 +2,8 @@
     color: $color_73adff;
     font-size: 14px;
     line-height: 1.7;
-    font-family: $OpenSans_Regular;
+    font-family: $OpenSans;
+    font-weight: 400;
     position: relative;
     cursor: pointer;
     margin-left: 13px;
@@ -41,7 +42,8 @@
         color: $color_73adff;
         font-size: 16px;
         line-height: 1.75;
-        font-family: $OpenSans_Regular;
+        font-family: $OpenSans;
+        font-weight: 400;
         position: relative;
         padding: 8px 16px 6px;
     }
